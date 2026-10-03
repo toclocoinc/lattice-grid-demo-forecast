@@ -4,7 +4,7 @@ A [Lattice Grid](https://latticegrid.dev) demo. US electricity output, month by 
 Aug 2024 is set beside what actually happened over the next 24 months. A **scrubber** moves through that horizon; the
 **grid** (date, actual, forecast, lower/upper 95% interval, residual), the **fan** chart (`type: 'fan'`: history, forecast,
 widening interval) and the **decomposition** chart (`type: 'decomposition'`: observed, trend, seasonal, residual) are all
-bound to the one grid and follow it. Grid 1.86.2 from the jsDelivr CDN; no API keys, no analytics.
+bound to the one grid and follow it. Grid 1.86.3 from the jsDelivr CDN; no API keys, no analytics.
 
 ## Run it
 
