@@ -2,7 +2,7 @@
 (async () => {
   const el = (id) => document.getElementById(id);
   const { createGrid, createChart } = LatticeGrid;
-  const { meta, rows } = await (await fetch('data/forecast.json?v=20261003t')).json();
+  const { meta, rows } = await (await fetch('data/forecast.json?v=20261003u')).json();
   const horizon = rows.filter((r) => r.phase === 'horizon');
   const month = (d) => new Date(`${d}T00:00:00Z`).toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' });
   el('origin').textContent = month(meta.originDate);
