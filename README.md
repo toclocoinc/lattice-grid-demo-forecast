@@ -4,7 +4,7 @@ A [Lattice Grid](https://latticegrid.dev) demo. US electricity output, month by 
 Aug 2024 is set beside what actually happened over the next 24 months. A **scrubber** moves through that horizon; the
 **grid** (date, actual, forecast, lower/upper 95% interval, residual), the **fan** chart (`type: 'fan'`: history, forecast,
 widening interval) and the **decomposition** chart (`type: 'decomposition'`: observed, trend, seasonal, residual) are all
-bound to the one grid and follow it. Grid 1.86.0 from the jsDelivr CDN; no API keys, no analytics.
+bound to the one grid and follow it. Grid 1.86.1 from the jsDelivr CDN; no API keys, no analytics.
 
 ## Run it
 
@@ -36,12 +36,9 @@ actual minus forecast on the horizon, and actual minus trend minus seasonal in t
 
     node tools/verify.mjs [--shots dir]     # Node 22+, real headless Chrome over DevTools, no dependencies
 
-## Known grid defect (grid 1.86.0)
-
-The fan chart draws an empty forecast/interval cell as 0 (`Number(null)`), so the dashed line and the band start from
-the first history row and drop to zero. Recorded as F-1632-1; the demo is deliberately not worked around, and the
-fan checks in `tools/verify.mjs` fail until the grid is fixed.
 
 ## Licence
 
 MIT, see `LICENSE`.
+
+The page carries the Lattice Grid public-demo licence for `toclocoinc.github.io`, so no watermark shows there.
